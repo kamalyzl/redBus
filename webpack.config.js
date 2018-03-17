@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const DIST_DIR = path.resolve(__dirname, './public');
@@ -37,9 +36,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: ['style-loader','css-loader']
-        })
+        use: ['style-loader','css-loader']
       },
       {
         test: /\.js$/,
@@ -57,9 +54,6 @@ module.exports = {
       inject: false,
       template: './public/index.html',
       filename: './index.html'
-    }),
-    new ExtractTextPlugin({
-      filename: './css/styles.css'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
