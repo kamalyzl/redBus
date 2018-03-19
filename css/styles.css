@@ -1,3 +1,8 @@
+/* @font-face {
+  src: url('../assets/fuentes/Avenue-du-Vapoteur.ttf');
+  font-family: Avenue;
+} */
+
 .color {
   color: blueviolet;
 }
@@ -20,6 +25,7 @@
   padding: 0.5rem;
   cursor: pointer;
   z-index: 900;
+  font-family: Avenue;
 }
 
 hr {
@@ -33,14 +39,14 @@ hr {
 .link-style.is-active {
   color: #B9373E;
 }
-
+/* 
 .link-style:hover{
   color: var(--color-yellow);
   text-decoration: none;
   font-weight: 600;
   border-bottom:  rgb(75, 29, 134);
   z-index: 900;
-}
+} */
 
 /* .tab:active + label {
   background-color: rgb(27, 1, 1);
@@ -51,5 +57,9 @@ hr {
 } */
 
 .w3-red {
-  color: aqua;
+  color: var(--color-yellow);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom:  rgb(75, 29, 134);
+  z-index: 900;
 }

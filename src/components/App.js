@@ -10,15 +10,13 @@ import PayCash from './PayCash';
 import Footer from './Footer';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 class App extends Component {
-  // let tab = document.getElementsByClassName('tab');
 
   click = event => {
-    let tab = document.getElementsByClassName('tab');
-    // tab.classList.remove('w3-red');
-    console.log(tab);
-    console.log(tab.length);
-    console.log(this);
-    // tab.addEventListener('click')
+    let label = event.target;
+    label.classList.toggle('w3-red');
+    console.log(event.target.siblings);
+    console.log(event.target);
+
   };
   render() {
     return (
@@ -34,7 +32,7 @@ class App extends Component {
                   <li className='d-inline'>
                     <Link
                       to='/'
-                      className='link-style tab'
+                      className='link-style tab w3-red'
                       onClick={this.click}
                     >
                       Banca por internet
@@ -44,7 +42,6 @@ class App extends Component {
                     <Link
                       to='/PayCash'
                       className='link-style tab'
-                      onClick={this.click}
                     >
                       Pagar en efectivo
                     </Link>
