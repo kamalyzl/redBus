@@ -1,8 +1,8 @@
 import React from 'react';
 const Informative = () => {
   return (
-    <div className>
-      <h1 className>Informative component</h1>
+    <div >
+      <h1 >Informative component</h1>
     </div>
   );
 };

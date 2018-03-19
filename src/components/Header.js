@@ -1,8 +1,8 @@
 import React from 'react';
 const Header = () => {
   return (
-    <div className>
-      <h1 className>Header de logo</h1>
+    <div >
+      <h1 >Header de logo</h1>
     </div>
   );
 };

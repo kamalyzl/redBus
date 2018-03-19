@@ -1,8 +1,8 @@
 import React from 'react';
 const PayCash = () => {
   return (
-    <div className>
-      <h1 className>Pago en efectivo</h1>
+    <div >
+      <h1 >Pago en efectivo</h1>
     </div>
   );
 };

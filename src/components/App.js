@@ -8,9 +8,18 @@ import Informative from './Informative';
 import InternetBanking from './InternetBanking';
 import PayCash from './PayCash';
 import Footer from './Footer';
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 class App extends Component {
+  // let tab = document.getElementsByClassName('tab');
+
+  click = event => {
+    let tab = document.getElementsByClassName('tab');
+    // tab.classList.remove('w3-red');
+    console.log(tab);
+    console.log(tab.length);
+    console.log(this);
+    // tab.addEventListener('click')
+  };
   render() {
     return (
       <Router>
@@ -21,19 +30,31 @@ class App extends Component {
                 <Route path='/' component={Header} />
               </div>
               <div className='col-12'>
-                <ul>
-                  <li className='display'>
-                    <Link to='/'>Banca por internet</Link>
+                <ul className='tab-menu'>
+                  <li className='d-inline'>
+                    <Link
+                      to='/'
+                      className='link-style tab'
+                      onClick={this.click}
+                    >
+                      Banca por internet
+                    </Link>
                   </li>
-                  <li className='display'>
-                    <Link to='/PayCash'>Pagar en efectivo</Link>
+                  <li className='d-inline'>
+                    <Link
+                      to='/PayCash'
+                      className='link-style tab'
+                      onClick={this.click}
+                    >
+                      Pagar en efectivo
+                    </Link>
                   </li>
                 </ul>
                 <hr />
                 <Route path='/' component={Informative} />
-                <Route path='/' exact component={InternetBanking}/>
-                <Route path='/PayCash' component={PayCash}/>
-                <Route path='/' component={Footer}/>
+                <Route path='/' exact={true} component={InternetBanking} />
+                <Route path='/PayCash' component={PayCash} />
+                <Route path='/' component={Footer} />
               </div>
             </div>
           </div>
