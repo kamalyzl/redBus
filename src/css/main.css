@@ -36,13 +36,15 @@
   overflow: hidden;
 }
 .content-info div:first-child {
-  background: var(--color-yellow); 
+    background: var(--color-yellow);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding-left: 2rem;
-  font-size: initial; 
-  /* width: 20%; */
-  /* max-width: 20%; */
+  /* padding-left: 2rem; */
+  padding-top: 1.3rem;
+  font-size: initial;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .content-info div:first-child span {
   font-size: 1.5rem;
@@ -79,7 +81,8 @@
       font-size: .7rem;
   }
   .content-info div:first-child {
-      font-size: .7rem;
+      font-size: .5rem;
+      padding-top: 0.2rem
   }
   .content-info div:first-child span {
   font-size: 1.5rem;

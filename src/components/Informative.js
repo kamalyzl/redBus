@@ -11,7 +11,7 @@ const info = {
 const Informative = () => {
   return (
     <div className="ed-container cross-center content-info">
-      <div className="ed-item m-1-3">Código de pago
+      <div className="ed-item m-1-3"><span>Código de pago</span><br/>
         <span>{info.dataInfo.cod}</span>
       </div>
       <div className="ed-item m-1-3">Total S/.
