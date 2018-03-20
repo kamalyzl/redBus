@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import 'bootstrap/dist/css/bootstrap.css';
-
-import '../../css/styles.css';
 import Header from './Header';
 import Informative from './Informative';
 import InternetBanking from './InternetBanking';
 import PayCash from './PayCash';
 import Footer from './Footer';
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 class App extends Component {
 
@@ -22,26 +20,26 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <div className='container-fluid'>
-            <div className='row'>
-              <div className='col-12'>
+          <div>
+            <div>
+              <div >
                 <Route path='/' component={Header} />
               </div>
-              <div className='col-12'>
-                <ul className='tab-menu'>
-                  <li className='d-inline'>
+              <div>
+                <ul>
+                  <li>
                     <Link
                       to='/'
-                      className='link-style tab w3-red'
+                     
                       onClick={this.click}
                     >
                       Banca por internet
                     </Link>
                   </li>
-                  <li className='d-inline'>
+                  <li>
                     <Link
                       to='/PayCash'
-                      className='link-style tab'
+                      
                     >
                       Pagar en efectivo
                     </Link>
@@ -61,4 +59,11 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+
+}
+
+App.defaultProps = {
+  
+}
 export default App;

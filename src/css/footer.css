@@ -1,0 +1,11 @@
+.footer {
+    height: 20vh;
+}
+
+.footer li {
+    outline: 1px solid yellow;
+    list-style: none;
+    height: inherit;
+    text-align: center;
+    padding: 2.5rem .5rem; 
+}

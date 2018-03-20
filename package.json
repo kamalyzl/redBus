@@ -1,6 +1,7 @@
 {
   "name": "redbus",
   "version": "1.0.0",
+  "private": true,
   "description": "Reto starsup with react",
   "main": "index.js",
   "scripts": {
@@ -45,7 +46,6 @@
     "jquery": "^3.3.1",
     "npm": "^5.7.1",
     "react": "^16.2.0",
-    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"
   }

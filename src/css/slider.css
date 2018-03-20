@@ -1,0 +1,11 @@
+button.slick-arrow.slick-prev{
+    background-color: black;
+}
+
+.button.slick-arrow.slick-next {
+    background-color: black;
+}
+
+.slider {
+    height: 20vh;
+}
