@@ -1,15 +1,12 @@
 import React from 'react'
 import SliderPay from './slider'
 import Slider from 'react-slick'
+import dataBankInternet from '../data/dataInternet.json';
 
 
-const imagesArray = [
-  '../assets/images/bcp.png',
-  '../assets/images/bbva.jpg',
-  '../assets/images/Banbif.png',
-  '../assets/images/interbank.jpg',
-  '../assets/images/scotiabanck.png'
-]
+const imagesArray = {
+  dataBankInternet
+}
 const settings = {
   // dots: true,
   infinite: true,
@@ -19,7 +16,7 @@ const settings = {
 };
 const InternetBanking = () => (
   <Slider {...settings} className="ed-container cross-center slider">
-    <SliderPay imgArray={imagesArray}/>  
+    <SliderPay imgArray={imagesArray.dataBankInternet.dataInternet}/>  
   </Slider>
 ) 
 

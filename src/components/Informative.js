@@ -2,26 +2,24 @@ import React from 'react'
 import '../css/ed-grid.min.css'
 import '../css/styles.css'
 import '../css/main.css'
+import dataInfo from '../data/informative.json';
 
 const info = {
-  cod:9125682111,
-  price:140.00,
-  date: '23 Feb',
-  hour: '01:12 pm.'
-}
+  dataInfo
+};
 
 const Informative = () => {
   return (
     <div className="ed-container cross-center content-info">
       <div className="ed-item m-1-3">Código de pago
-        <span>{info.cod}</span>
+        <span>{info.dataInfo.cod}</span>
       </div>
       <div className="ed-item m-1-3">Total S/.
-        <span>{info.price}</span>
+        <span>{info.dataInfo.price}</span>
       </div>
       <div className="ed-item m-1-3"> Tu orden expirará
         <br />
-        <span>{info.date} - {info.hour}</span>
+        <span>{info.dataInfo.date} - {info.dataInfo.hour}</span>
       </div>
     </div>
   );

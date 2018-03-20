@@ -4,14 +4,11 @@ import React from 'react'
 import SliderPay from './slider'
 // import $ from 'jquery'
 import Slider from 'react-slick'
+import dataCash from '../data/dataCash.json'
 
-const imagesArray = [
-  '../assets/images/Banbif.png',
-  '../assets/images/fullcarga.png',
-  '../assets/images/kasnet.jpg',
-  '../assets/images/western_union.jpg',
-  '../assets/images/scotiabanck.png'
-]
+const imagesArray = {
+  dataCash
+}
 const settings = {
   // dots: true,
   infinite: true,
@@ -23,7 +20,7 @@ const settings = {
 const PayCash = () => {
   return (
     <Slider {...settings} className="ed-container cross-center slider">
-      <SliderPay imgArray={imagesArray}/>  
+      <SliderPay imgArray={imagesArray.dataCash.dataCash}/>  
     </Slider>
   );
 };
