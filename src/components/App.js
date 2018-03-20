@@ -38,14 +38,12 @@ class App extends Component {
                   </li>
                   <li>
                     <Link
-                      to='/PayCash'
-                      
+                      to='/PayCash'                     
                     >
                       Pagar en efectivo
                     </Link>
                   </li>
                 </ul>
-                <hr />
                 <Route path='/' component={Informative} />
                 <Route path='/' exact={true} component={InternetBanking} />
                 <Route path='/PayCash' component={PayCash} />

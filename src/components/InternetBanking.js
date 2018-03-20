@@ -1,13 +1,26 @@
 import React from 'react'
-// import $ from 'jquery'
-// import Slider from 'react-slick'
-// import 'slick-carousel/slick/slick.css'
-// import 'slick-carousel/slick/slick-theme.css'
-const InternetBanking = () => {
-  return (
-    <div >
-      <h1 >Banca por internet</h1>
-    </div>
-  );
+import SliderPay from './slider'
+import Slider from 'react-slick'
+
+
+const imagesArray = [
+  '../assets/images/bcp.png',
+  '../assets/images/bbva.jpg',
+  '../assets/images/Banbif.png',
+  '../assets/images/interbank.jpg',
+  '../assets/images/scotiabanck.png'
+]
+const settings = {
+  // dots: true,
+  infinite: true,
+  // speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
 };
-export default InternetBanking;
+const InternetBanking = () => (
+  <Slider {...settings} className="ed-container cross-center slider">
+    <SliderPay imgArray={imagesArray}/>  
+  </Slider>
+) 
+
+export default InternetBanking
