@@ -1,17 +1,16 @@
-
 /*Componente children/MainOption*/
 .MainOption {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
-.MainOption li { 
-    list-style: none;
-    padding: 3rem 1.5rem 3rem .5rem;
-    display: inline;
+.MainOption li {
+  list-style: none;
+  padding: 3rem 1.5rem 3rem 0.5rem;
+  display: inline;
 }
 
 @media (max-width: 780px) {
   .MainOption {
-      font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 /*Componente children/Pago efectivo logo*/
@@ -20,23 +19,23 @@
 }
 
 /*Componente children/Main-content-info*/
-.content-info { 
+.content-info {
   padding: 2rem 0;
-  text-align: center;    
+  text-align: center;
 }
-.content-info div { 
+.content-info div {
   list-style: none;
-  padding: 3rem 1rem;  
-  background:  var(--color-grey); 
-  font-size: 1.5rem; 
-  max-height: 7.5rem ;
+  padding: 3rem 1rem;
+  background: var(--color-grey);
+  font-size: 1.5rem;
+  max-height: 7.5rem;
   /* text-align: center;  */
-  height:auto;
+  height: auto;
   /* word-wrap: break-word; */
   overflow: hidden;
 }
 .content-info div:first-child {
-    background: var(--color-yellow);
+  background: var(--color-yellow);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   /* padding-left: 2rem; */
@@ -60,51 +59,55 @@
   /* background-size: 3rem; */
   /* padding-left: 3.5rem; */
   /* background-position: center left 10px; */
-  font-size: initial; 
+  font-size: initial;
   /* width: 30%; */
   /* max-width: 1200px; */
 }
 
-
 @media (max-width: 780px) {
-  .content-info div {   
-      display: inline-block;  
-      font-size: .7rem; 
-      height: 70px;  
-      padding: 1rem 1rem;
-    
+  .content-info div {
+    display: inline-block;
+    font-size: 0.7rem;
+    height: 70px;
+    padding: 1rem 1rem;
   }
-  .content-info div:last-child { 
-      background-size: 2.5rem;
-      padding-left: 3rem;
-      background-position: center left 10px;
-      font-size: .7rem;
+  .content-info div:last-child {
+    background-size: 2.5rem;
+    padding-left: 3rem;
+    background-position: center left 10px;
+    font-size: 0.7rem;
   }
   .content-info div:first-child {
-      font-size: .5rem;
-      padding-top: 0.2rem
+    font-size: 0.5rem;
+    padding-top: 0.2rem;
   }
   .content-info div:first-child span {
-  font-size: 1.5rem;
-  color: var(--color-grey);
+    font-size: 1.5rem;
+    color: var(--color-grey);
+  }
 }
-}
-
 
 /*slider*/
 
-button.slick-arrow.slick-prev{
+button.slick-arrow.slick-prev {
   background-color: black;
+  display: none !important;
 }
 
-.button.slick-arrow.slick-next {
-  background-color: black;
+button.slick-arrow.slick-next {
+  /* background-color: black; */
+  /* position: relative !important; */
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  border-radius: 50px;
+  width: 30px;
+  padding-left: 2px;
 }
 
 .slider {
   height: 20vh;
 }
-
 
 /*MainPayGo*/
 
