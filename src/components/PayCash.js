@@ -39,7 +39,11 @@ const PayCash = () => {
         adicional- solo tienen: fullcarga, bcp e interbank
       </p>
       <button>
-        <a href='https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=1&monto=100.00&ubicame=true&_k=ws2owh' target='_blank'>
+        <a
+          href='https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=1&monto=100.00&ubicame=true&_k=ws2owh'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Encuentra tu punto de pago
         </a>
       </button>
