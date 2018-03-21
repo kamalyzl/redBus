@@ -9,10 +9,9 @@ const info = {
 };
 
 const date =
-  new Date().getDate() +
-  2 +
+  (new Date().getDate() + 2 +
   ' ' +
-  new Date().toLocaleString('es-pe', { month: 'long' });
+  new Date().toLocaleString('es-pe', { month: 'long' }));
 
 const showTime = () => {
   let timeNow = new Date();
@@ -27,22 +26,15 @@ const showTime = () => {
 const Informative = () => {
   return (
     <div className='ed-container cross-center content-info'>
-      <div className='ed-item m-1-3'>
-        <span>Código de pago</span>
-        <br />
+      <div className='ed-item m-1-3'><span>Código de pago</span><br/>
         <span>{info.dataInfo.cod}</span>
       </div>
-      <div className='ed-item m-1-3'>
-        Total S/.
+      <div className='ed-item m-1-3'>Total S/.
         <span>{info.dataInfo.price}</span>
       </div>
-      <div className='ed-item m-1-3'>
-        {' '}
-        Tu orden expirará
+      <div className='ed-item m-1-3'> Tu orden expirará
         <br />
-        <span>
-          {date} - {showTime()}
-        </span>
+        <span>{date} - {showTime()}</span>
       </div>
     </div>
   );
