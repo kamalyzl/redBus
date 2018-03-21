@@ -8,18 +8,33 @@ const info = {
   dataInfo
 };
 
+const date =
+  (new Date().getDate() + 2 +
+  ' ' +
+  new Date().toLocaleString('es-pe', { month: 'long' }));
+
+const showTime = () => {
+  let timeNow = new Date();
+  let hours = timeNow.getHours();
+  let minutes = timeNow.getMinutes();
+  let timeString = '' + (hours > 12 ? hours - 12 : hours);
+  timeString += (minutes < 10 ? ':0' : ':') + minutes;
+  timeString += hours >= 12 ? ' P.M.' : ' A.M.';
+  return timeString;
+};
+
 const Informative = () => {
   return (
-    <div className="ed-container cross-center content-info">
-      <div className="ed-item m-1-3"><span>Código de pago</span><br/>
+    <div className='ed-container cross-center content-info'>
+      <div className='ed-item m-1-3'><span>Código de pago</span><br/>
         <span>{info.dataInfo.cod}</span>
       </div>
-      <div className="ed-item m-1-3">Total S/.
+      <div className='ed-item m-1-3'>Total S/.
         <span>{info.dataInfo.price}</span>
       </div>
-      <div className="ed-item m-1-3"> Tu orden expirará
+      <div className='ed-item m-1-3'> Tu orden expirará
         <br />
-        <span>{info.dataInfo.date} - {info.dataInfo.hour}</span>
+        <span>{date} - {showTime()}</span>
       </div>
     </div>
   );
