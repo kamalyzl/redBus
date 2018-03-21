@@ -14,13 +14,16 @@ const settings = {
   slidesToShow: 5,
   slidesToScroll: 5,
 };
+// const show = e => {
+//   // alert("td");
+//   console.log(e.target.data['name']);
+// };
 
-
-const SliderPay = ({ imgArray }) =>   (
+const SliderPay = ({ imgArray, show}) =>   (
   <Slider {...settings} className="ed-container cross-center slider">
     {imgArray.map((val,i) => (
       <div key={i}>
-        <img src={val.image} />
+        <img src={val.image} data-name={val.bank} onClick={show}/>
       </div>
     ))}
 
