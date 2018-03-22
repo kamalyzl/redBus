@@ -7,9 +7,10 @@ cache:
 script:
   - npm run build
 deploy:
-  provider: pages
+  provider: releases
+  api_key:
+    secure: D2aui/vzd3USbwlVLPWoE3vZPj//ruKOgOFz3oEI4OvPORTGzYaXTQBUq05YKtFPDSjUuQHaVuVJ3mhM+hE2i47kNSsQjFWFK9IACN/NTCyTghOWn0XtD3puKlmCoOPqUz42YLdjtIU8KPQ92V6scqW/e41qCnucjxPxdOTxhXYv8lEoZCQOFVncPfJzIC7kHM24ZpEOEZBnTe3FACD5vwQm2xdpLX0JdoMT6iA9pG9QghhbjdEnW9BBLQMCLUEjaYG1M7ssE4cmkOEfLTpGvWVs+c6G7/1KGz/4Krn+4Q/Yc4SVct2w4l4MttrTDuDa/BaJVUQw0fRrEels8OMDcwHswFiHlhJIqx86106h8GDHQ8uvcYZurfIzBB7C4DF55zX+CRx0jlABWR1kfbc1egt95ElP3LmYti+Fdb9RbxKgEOqrrPWLwyllrWjP1iTNdgLGZFFurlPlegP2cnihl7S9+oVoQqpBjOPb7VuwLy5GnhJ0gkwmSYdwkhtRyFmBJQMi/IB8KjihdnT0ExfTNwVr+w8JBKySPQdW4U/YgcJwiy4vP9k6qqkzttGr0JLaUcMH5+XZlmUZMd2R67QaT4VCVRI35DrFCOtZijWPAreSJFlxshXKiJ3MGOrq0GrRU6jzbDnFUaqJ/VdA6CfPizSKQXWIvZE0lxnjjIrWtDQ=
   skip_cleanup: true
-  github_token: 9a08f13dcc32fb03a8490c2191c533b8915cb824
-  local_dir: public
   on:
-    branch: master
+    repo: AlejandraCP/redBus
+
