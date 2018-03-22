@@ -29,7 +29,8 @@ const SliderPay = ({imgArray,show}) =>   (
 );
  
 SliderPay.propTypes = {
-  imgArray: PropTypes.arrayOf(PropTypes.string).isRequired
+  imgArray: PropTypes.arrayOf(PropTypes.string).isRequired,
+  show: PropTypes.func.isRequired
 }
 
 export default SliderPay
