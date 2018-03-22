@@ -138,16 +138,13 @@ button.slick-arrow.slick-next {
 }
 
  
-
+/*Diseño del Componente InternetBanking*/
 .selec-pay{
   color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
 }
-
-.box-description{
-
-}
+ 
 .box-description p:nth-child(2){
   color: var(--color-yellow);
   font-weight: 900;
@@ -176,6 +173,17 @@ button.slick-arrow.slick-next {
 }
 .bpi a{
   color: var(--color-grey);
+}
+
+/*Diseño del Componente PayCash*/
+ 
+.box-description-cash p:nth-child(1){
+  color: var(--color-yellow);
+  font-weight: 900;
+}
+.box-description-cash ol{
+  list-style: none;
+  padding: 0;
 }
 
 
