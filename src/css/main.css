@@ -59,16 +59,14 @@
   background: var(--color-grey);
   font-size: 1.5rem;
   max-height: 7.5rem;
-  /* text-align: center;  */
+  display: grid;
   height: auto;
-  /* word-wrap: break-word; */
   overflow: hidden;
 }
 .content-info div:first-child {
   background: var(--color-yellow);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  /* padding-left: 2rem; */
   padding-top: 1.3rem;
   font-size: initial;
   display: flex;
@@ -84,16 +82,14 @@
   background: var(--color-time);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* background-image: url(../assets/icons/alarm.svg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 3rem; */
-  /* padding-left: 3.5rem; */
-  /* background-position: center left 10px; */
   font-size: initial;
-  /* width: 30%; */
-  /* max-width: 1200px; */
 }
 
+.alarm {
+  float: left;
+  height: 3.5rem;
+  margin-left: 2.1rem;
+}
 @media (max-width: 780px) {
   .content-info div {
     display: inline-block;

@@ -25,15 +25,16 @@ const showTime = () => {
 const Informative = () => {
   return (
     <div className='ed-container cross-center content-info'>
-      <div className='ed-item m-1-3'><span>Código de pago</span><br/>
-        <span>{info.dataInfo.cod}</span>
+      <div className='ed-item m-1-3 cross-center'>
+        <p><span>Código de pago</span><br/> <span>{info.dataInfo.cod}</span></p>
       </div>
-      <div className='ed-item m-1-3'>Total S/.
-        <span>{info.dataInfo.price}</span>
+      <div className='ed-item m-1-3 cross-center'>
+        <p>Total <br /> S/.<span>{info.dataInfo.price}</span></p> 
       </div>
-      <div className='ed-item m-1-3'> Tu orden expirará
-        <br />
-        <span>{date} - {showTime()}</span>
+      <div className='ed-item m-1-3 cross-center'> 
+        <p><span> <img src="../assets/icons/alarm.svg" alt="" className="alarm" /> </span> Tu orden expirará  <br /> <span>{date} - {showTime()}</span></p>       
+     
+        
       </div>
     </div>
   );
