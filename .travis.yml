@@ -13,5 +13,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: AlejandraCP/redBus
-    branch: master
+    branches:   
+      only:      
+        - master
 
