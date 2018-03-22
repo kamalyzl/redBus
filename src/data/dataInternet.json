@@ -2,7 +2,7 @@
   "dataInternet": [
     {
       "bank": "bcp",
-      "image": "../assets/images/bcp.png",
+      "image": "./assets/images/bcp.png",
       "id": 1,
       "typePlace": "",
       "text":
@@ -10,7 +10,7 @@
     },
     {
       "bank": "bbva",
-      "image": "../assets/images/bbva.jpg",
+      "image": "./assets/images/bbva.jpg",
       "id": 2,
       "typePlace": "",
       "text":
@@ -18,7 +18,7 @@
     },
     {
       "bank": "interbank",
-      "image": "../assets/images/interbank.jpg",
+      "image": "./assets/images/interbank.jpg",
       "id": 3,
       "typePlace": "",
       "text":
@@ -26,7 +26,7 @@
     },
     {
       "bank": "scotiabank",
-      "image": "../assets/images/scotiabanck.png",
+      "image": "./assets/images/scotiabanck.png",
       "id": 4,
       "typePlace": "",
       "text":
@@ -34,7 +34,7 @@
     },
     {
       "bank": "banbif",
-      "image": "../assets/images/banbif.png",
+      "image": "./assets/images/banbif.png",
       "id": 5,
       "typePlace": "",
       "text":
