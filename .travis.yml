@@ -13,7 +13,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: AlejandraCP/redBus
-    branches:   
-      only:      
-        - master
+    tags: true 
+    all_branches: true
 

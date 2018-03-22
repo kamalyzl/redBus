@@ -10,15 +10,15 @@
     },
     {
       "bank": "bbva",
-      "image": "./assets/images/bbva.jpg",
+      "image": "../assets/images/bbva.jpg",
       "id": 2,
       "typePlace": "",
       "text":
         "Selecciona la opción Pago de servicios > De instituciones y Empresas > Busca por nombre > PAGOEFECTIVO > PAGOEFECTIVOSOLES."
     },
-    {
+    { 
       "bank": "interbank",
-      "image": "./assets/images/interbank.jpg",
+      "image": "../../assets/images/interbank.jpg",
       "id": 3,
       "typePlace": "",
       "text":
