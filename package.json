@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://AlejandraCP@bitbucket.org/AlejandraCP/redbus-reto.git"
+    "url": "git+https://github.com/AlejandraCP/redbus.git"
   },
   "author": "Alejandra Cabrera and Kamaly Zapana",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/AlejandraCP/redbus-reto#readme",
+  "homepage": "https://alejandracp.github.io/redBus/",
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
