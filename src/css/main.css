@@ -219,3 +219,29 @@ button.slick-arrow.slick-next {
   /* right: 8%; */
   /* top: -16px; */
 }
+
+/* style navLink */
+
+.linkNav {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 700;
+  color: #000;
+}
+.linkNav:hover{
+  text-decoration: none;
+}
+.active {
+  color: var(--color-yellow);
+  border: 5px solid var(--color-yellow);
+  border-bottom-color: #F6F4F4;
+  z-index: 200;
+}
+
+hr {
+  background-color: var(--color-yellow);
+  height: 5px;
+  border-color: var(--color-yellow);
+}

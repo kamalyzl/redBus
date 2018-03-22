@@ -12,8 +12,6 @@ const imagesArray = {
 };
 var something = '';
 const show = e => {
-  // alert('td');
-  // console.log(dataBankInternet.dataInternet[0].text);
   let element = e.target.dataset.name;
   let data = dataBankInternet.dataInternet;
   data.map((value, i) => {
@@ -22,8 +20,6 @@ const show = e => {
       something = value.text;
       return something; 
     } 
-
-    // console.log(value.text);
   });
 };
 const info = {

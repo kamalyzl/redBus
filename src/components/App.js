@@ -8,16 +8,9 @@ import Footer from './Footer';
 import '../css/ed-grid.min.css'
 import '../css/main.css'
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 class App extends Component {
 
-  click = event => {
-    let label = event.target;
-    label.classList.toggle('w3-red');
-    console.log(event.target.siblings);
-    console.log(event.target);
-
-  };
   render() {
     return (
       <Router>
@@ -27,8 +20,8 @@ class App extends Component {
           </div>
           <div>
             <ul className="ed-container select">
-              <li><Link to='/' onClick={this.click} > Banca por internet | </Link></li> 
-              <li><Link to='/PayCash'>Pagar en efectivo</Link></li>
+              <li><NavLink to='/' exact activeClassName='active' className='linkNav'> Banca por internet   </NavLink></li> 
+              <li><NavLink to='/PayCash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
             </ul>
             <hr className="ed-container"/>
             <Route path='/' component={Informative} />
