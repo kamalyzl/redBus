@@ -1,12 +1,10 @@
 import React from 'react'
-
 import '../css/ed-grid.min.css'
-import '../css/styles.css'
-import '../css/footer.css'
+import '../css/main.css'
 
 const Footer = () => {
   return (
-    <div className="ed-container ed-item s-90 m-80 l-80 s-offset-5 m-offset-10 cross-center footer">
+    <div className="ed-container cross-center footer">
       <li className="ed-item s-1-3">Instrucciones vía  <img src="../assets/icons/printer.svg" alt="" />
       </li>
       <li className="ed-item s-1-3">Ayuda: <span>contacto@redbus.pe</span>

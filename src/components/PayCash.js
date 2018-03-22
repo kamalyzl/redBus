@@ -1,9 +1,11 @@
 import React from 'react';
-import SliderPay from './slider';
-// import $ from 'jquery'
+import SliderPay from './children/slider';
 import Slider from 'react-slick';
 import dataCash from '../data/dataCash.json';
 import dataInfo from '../data/informative.json';
+
+import '../css/ed-grid.min.css'; 
+import '../css/main.css';
 
 const imagesArray = {
   dataCash

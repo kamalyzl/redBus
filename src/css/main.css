@@ -1,24 +1,50 @@
-/*Componente children/MainOption*/
-.MainOption {
-  font-size: 1.3rem;
+* {
+  font-family: 'Montserrat', sans-serif;
 }
-.MainOption li {
-  list-style: none;
-  padding: 3rem 1.5rem 3rem 0.5rem;
-  display: inline;
+.color {
+  color: blueviolet;
 }
 
-@media (max-width: 780px) {
-  .MainOption {
-    font-size: 0.9rem;
+:root {
+  --color-time : #FFD87F;
+  --color-yellow : #E0AA00;
+  --color-red : #B9373E;
+  --color-text : rgb(122, 119, 116);
+  --color-grey : #F6F4F4;
+
+} 
+ 
+/*Componente Header*/
+ 
+  .main-header{
+    height: 4rem;
+    border-bottom: 1px solid var(--color-red);
+    background: var(--color-red);
   }
-}
-/*Componente children/Pago efectivo logo*/
-.pago-efectivo-logo {
-  padding-top: 3rem;
+  
+  .pago-efectivo-logo {
+    padding-top: 3rem;
+  }
+  
+  .main-menu-link {
+    color: var(--color-grey);
+    font-size: .8rem;
+  }
+  @media (max-width: 600px) {
+    .logo {
+        height: 2.5rem;
+      }
+  }
+ 
+/*Selec -  se encuentra en el componente App*/
+ 
+.select li {
+  list-style: none;
+  font-size: 2rem;
 }
 
-/*Componente children/Main-content-info*/
+
+/*Componente children/Informative*/
 .content-info {
   padding: 2rem 0;
   text-align: center;
@@ -87,16 +113,14 @@
   }
 }
 
-/*slider*/
+/*slider plugin*/
 
 button.slick-arrow.slick-prev {
   background-color: black;
   display: none !important;
 }
 
-button.slick-arrow.slick-next {
-  /* background-color: black; */
-  /* position: relative !important; */
+button.slick-arrow.slick-next { 
   position: absolute;
   right: 20px;
   top: -10px;
@@ -106,17 +130,45 @@ button.slick-arrow.slick-next {
 }
 
 .slider {
+  margin: 1rem 0;
+}
+
+ 
+
+.selec-pay{
+  color: var(--color-text);
+  /* font-size: 1.2rem;
+  letter-spacing: 2px;  */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-description{
+
+}
+.box-description p{
+
+}
+.box-description ol{
+
+}
+
+.bpi{
+
+}
+.bpi a{
+
+}
+
+
+/*componente Footer*/
+.footer {
   height: 20vh;
 }
 
-/*MainPayGo*/
-
-.MainPayGo {
-  background: var(--color-red);
-  border-radius: 20px;
+.footer li {
+  outline: 1px solid yellow;
+  list-style: none;
+  height: inherit;
   text-align: center;
-  display: inline;
-  font-size: 1.2rem;
-  color: var(--color-grey);
-  margin: 2rem 0;
+  padding: 2.5rem .5rem; 
 }

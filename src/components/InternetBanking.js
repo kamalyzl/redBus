@@ -1,8 +1,11 @@
-import React from "react";
-import SliderPay from "./slider";
-import Slider from "react-slick";
-import dataBankInternet from "../data/dataInternet.json";
-import dataInfo from "../data/informative.json";
+import React from 'react';
+import SliderPay from './children/slider';
+import Slider from 'react-slick';
+import dataBankInternet from '../data/dataInternet.json';
+import dataInfo from '../data/informative.json';
+
+import '../css/ed-grid.min.css'; 
+import '../css/main.css';
 
 const imagesArray = {
   dataBankInternet
@@ -35,22 +38,21 @@ const settings = {
   slidesToScroll: 5
 };
 const InternetBanking = () => (
-  <div>
+  <div className = "ed-container selec-pay">
     <p>Selecciona dónde quieres pagar</p>
-    <Slider {...settings} className="ed-container cross-center slider">
-      <SliderPay
-        imgArray={imagesArray.dataBankInternet.dataInternet}
-        show={show}
-      />
+    <Slider {...settings} className="ed-container ed-item cross-center slider">
+      <SliderPay imgArray={imagesArray.dataBankInternet.dataInternet} show={show}/>
     </Slider>
-    <p>Puedes pagar desde la Web o App móvil del Banco</p>
-    <h4>Instrucciones de Pago</h4>
-    <p>{something}kjhbhjjh</p>
-    <p>
-      2. Ingresa tu código CIP: <span>{info.dataInfo.cod}</span> y sigue los
-      pasos
-    </p>
-    <button>Ir a banca por internet</button>
+    <div className="box-description">
+      <p>Puedes pagar desde la Web o App móvil del Banco</p>
+      <ol>Instrucciones de Pago
+        <li>{something}Texto dinamico - Falta renderizar</li>
+        <li>Ingresa tu código CIP: <span>{info.dataInfo.cod}</span> y sigue los pasos</li>
+      </ol>  
+    </div>
+    <div className="ed-container bpi">
+      <a href="#">Ir a banca por internet</a>
+    </div>
   </div>
 );
 

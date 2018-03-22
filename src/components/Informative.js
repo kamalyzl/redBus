@@ -1,6 +1,5 @@
 import React from 'react';
-import '../css/ed-grid.min.css';
-import '../css/styles.css';
+import '../css/ed-grid.min.css'; 
 import '../css/main.css';
 import dataInfo from '../data/informative.json';
 
