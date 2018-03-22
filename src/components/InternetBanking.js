@@ -45,9 +45,10 @@ const InternetBanking = () => (
     </Slider>
     <div className="box-description">
       <p>Puedes pagar desde la Web o App móvil del Banco</p>
-      <ol>Instrucciones de Pago
-        <li>{something}Texto dinamico - Falta renderizar</li>
-        <li>Ingresa tu código CIP: <span>{info.dataInfo.cod}</span> y sigue los pasos</li>
+      <p>Instrucciones de Pago</p>
+      <ol>
+        <li><span className="number">1</span>{something}Texto dinamico - Falta renderizar</li>
+        <li><span className="number">2</span>Ingresa tu código CIP: <span>{info.dataInfo.cod}</span> y sigue los pasos</li>
       </ol>  
     </div>
     <div className="ed-container bpi">

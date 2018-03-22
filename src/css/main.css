@@ -25,6 +25,10 @@
   .pago-efectivo-logo {
     padding-top: 3rem;
   }
+  .pago-efectivo-logo img{
+    width: 20vh;
+  }
+  
   
   .main-menu-link {
     color: var(--color-grey);
@@ -40,7 +44,7 @@
  
 .select li {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 
@@ -137,38 +141,77 @@ button.slick-arrow.slick-next {
 
 .selec-pay{
   color: var(--color-text);
-  /* font-size: 1.2rem;
-  letter-spacing: 2px;  */
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
 }
 
 .box-description{
 
 }
-.box-description p{
-
+.box-description p:nth-child(2){
+  color: var(--color-yellow);
+  font-weight: 900;
 }
 .box-description ol{
-
+  list-style: none;
+  padding: 0;
+}
+.number {
+  color: var(--color-yellow);
+  border: 1.9px solid var(--color-yellow);
+  padding: 1px 5px;
+  border-radius: 50%;
+  font-size: .7rem;
+  margin-right: 3px;
 }
 
-.bpi{
-
+.bpi{   
+  background: var(--color-red);
+  color: var(--color-text);
+  display: inline;
+  text-align: center; 
+  padding: 1rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
 }
 .bpi a{
-
+  color: var(--color-grey);
 }
 
 
 /*componente Footer*/
-.footer {
-  height: 20vh;
+.footer { 
+  /* margin: 3rem 0 10rem 0; */
+  margin-bottom: 12rem;
+  margin-top: 5rem;
+ 
 }
 
-.footer li {
-  outline: 1px solid yellow;
-  list-style: none;
-  height: inherit;
-  text-align: center;
-  padding: 2.5rem .5rem; 
+.footer li { 
+  list-style: none; 
+  text-align: center; 
+}
+.footer li:nth-child(1) {
+ /* position: relative; */
+}
+.footer li:nth-child(1) img{
+  border: 1px solid;
+  padding: 7px 17px;
+  border-radius: 10px;
+  color: var(--color-yellow);
+  /* position: absolute; */
+  /* right: 14%; */
+  /* top: -9px; */
+}
+.footer li:nth-child(2) {
+   
+}
+.footer li:nth-child(3) {
+  /* position: relative; */
+}
+.footer li:nth-child(3) img {
+  width: 15vh;
+  /* position: absolute; */
+  /* right: 8%; */
+  /* top: -16px; */
 }

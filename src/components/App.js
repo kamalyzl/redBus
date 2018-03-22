@@ -30,6 +30,7 @@ class App extends Component {
               <li><Link to='/' onClick={this.click} > Banca por internet | </Link></li> 
               <li><Link to='/PayCash'>Pagar en efectivo</Link></li>
             </ul>
+            <hr className="ed-container"/>
             <Route path='/' component={Informative} />
             <Route path='/' exact={true} component={InternetBanking} />
             <Route path='/PayCash' component={PayCash} />
