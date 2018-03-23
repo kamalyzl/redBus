@@ -8,29 +8,30 @@ import Footer from './Footer';
 import '../css/ed-grid.min.css'
 import '../css/main.css'
 
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom';
 class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div>
-          <div >
-            <Route path='/' component={Header} />
-          </div>
-          <div>
-            <ul className='ed-container select'>
-              <li><NavLink to='/' exact activeClassName='active' className='linkNav'> Banca por internet   </NavLink></li> 
-              <li><NavLink to='/PayCash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
-            </ul>
-            <hr className='ed-container'/>
-            <Route path='/' component={Informative} />
-            <Route path='/' exact={true} component={InternetBanking} />
-            <Route path='/PayCash' component={PayCash} />
-            <Route path='/' component={Footer} />
-          </div>
+      <div>
+        <div >
+          <Header />
         </div>
-      </Router>
+        <div>
+          <ul className='ed-container select'>
+            <li><NavLink to='/internet' activeClassName='active' className='linkNav'> Banca por internet   </NavLink></li> 
+            <li><NavLink to='/paycash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
+          </ul>
+          <hr className='ed-container'/>
+          <Informative/>
+          <Router>
+            <Route path='/internet'  component={InternetBanking} />
+            <Route path='/paycash' component={PayCash} />
+            <Redirect from='/' to='/internet' />
+          </Router>
+          <Footer/>
+        </div>
+      </div>
     );
   }
 }
