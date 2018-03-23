@@ -2,7 +2,7 @@
   "dataCash": [
     {
       "bank": "bcp",
-      "image": "../assets/images/bcp.png",
+      "image": "./assets/images/bcp.png",
       "id": 1,
       "typePlace": "Agentes y Bodegas Agencias",
       "text": "Agentes BCP: Brinda el código de empresa 02186",
@@ -26,7 +26,7 @@
     },
     {
       "bank": "banbif",
-      "image": "./assets/images/banbif.png",
+      "image": "./assets/images/Banbif.png",
       "id": 4,
       "typePlace": "Agencias",
       "text": "",

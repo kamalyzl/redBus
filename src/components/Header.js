@@ -10,12 +10,12 @@ const Header = () => {
         <div className='ed-container full'>
           <div className='ed-item s-50 m-50 cross-center'>
             <img
-              src='https://user-images.githubusercontent.com/32287306/37760544-01c61d74-2d85-11e8-8e2e-7f5cdea5ee64.png'
+              src='./assets/icons/logoRedBus.png'
               alt=''
               className='logo'
             />
             <img
-              src='../assets/icons/logoRedBus2.png'
+              src='./assets/icons/logoRedBus2.png'
               alt=''
               className='logo'
             />

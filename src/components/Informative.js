@@ -83,7 +83,7 @@ const Informative = () => {
           <span>
             {' '}
             <img
-              src='../assets/icons/alarm.svg'
+              src='./assets/icons/alarm.svg'
               alt=''
               className='alarm'
             />{' '}

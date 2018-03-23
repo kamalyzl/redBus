@@ -10,7 +10,7 @@
     },
     {
       "bank": "bbva",
-      "image": "../assets/images/bbva.jpg",
+      "image": "./assets/images/bbva.jpg",
       "id": 2,
       "typePlace": "",
       "text":
@@ -18,7 +18,7 @@
     },
     { 
       "bank": "interbank",
-      "image": "../../assets/images/interbank.jpg",
+      "image": "./assets/images/interbank.jpg",
       "id": 3,
       "typePlace": "",
       "text":
