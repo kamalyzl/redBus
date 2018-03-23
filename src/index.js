@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const app = document.getElementById('root');
 ReactDOM.render(
-  <BrowserRouter baseName='redBus'>
+  <BrowserRouter baseName='/redBus'>
     <App />
   </BrowserRouter>,
   app
