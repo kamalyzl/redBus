@@ -19,11 +19,11 @@ class App extends Component {
             <Route path='/' component={Header} />
           </div>
           <div>
-            <ul className="ed-container select">
+            <ul className='ed-container select'>
               <li><NavLink to='/' exact activeClassName='active' className='linkNav'> Banca por internet   </NavLink></li> 
               <li><NavLink to='/PayCash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
             </ul>
-            <hr className="ed-container"/>
+            <hr className='ed-container'/>
             <Route path='/' component={Informative} />
             <Route path='/' exact={true} component={InternetBanking} />
             <Route path='/PayCash' component={PayCash} />
