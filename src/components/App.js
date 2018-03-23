@@ -8,7 +8,7 @@ import Footer from './Footer';
 import '../css/ed-grid.min.css'
 import '../css/main.css'
 
-import { Switch, Router, Route, NavLink, Redirect } from 'react-router-dom';
+import { Switch, Route, NavLink, Redirect } from 'react-router-dom';
 class App extends Component {
 
   render() {
