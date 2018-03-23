@@ -1,3 +1,6 @@
+env:
+  global:
+    secure: "n+AD7KRcivyNqMRs5icKbVMPJ8jj3ra7bixKiuJvyt5tSNHWpGMu+51jgNcnHxu0wZMpGaEHfJATs6/3++0iO0C0ZiMA/dHUrKY6x2zU8Ac6xmMdPfCnsl/7/XJYV1Peu18Pa5Dtuf5inIum9PV78jTD1veOa5ZUIyOkOBLSJUk945ifY+TyVH45JBGPjsdYrNV91WPFNbLQ4+bocRtxRvRIAs+MDcMnSvQiRx2RHgw84qsZUXI1mMIM4B7YEK6VxTvSvm0a7DQrwdo71YEniZSo9vlj0VUGxEEx2QThoyA7XSjxWuJVliyQmYj40NQoJQnBhWwwiYO88HaDEaACxxaRN+977kisqhbfYzoAl44dt6S2z6XCQt+CiAwwA9rs7K0ZSoA93o+fOz5IhpLKvyJlqZcfBQ1C9Raxr5/9iB1X3Rh/R5orxB4DjAuXqZmaj0Wbv4MbDqxQO7VxzuQKgvKE9E25NvJzKlK1sReQ/Wl7CvMqPKQ8By1e2kovMYmi0eHswxudDGz/N0RqlewjIG8h7W6NPTRqcnwQh+P6kJT3LsaSiGBZ0Zn4F3tenvsdT4XJpMCFz4JIJYMhfhIsgQ9Cxng4tEQkMJwcZ3HVWzUO1GarkcHrOzL0iBVaU2bTAor57yyux9Gz5iAWDVmiYgNxD5Dx51y46zaa9lH8PTY="
 language: node_js
 node_js:
   - "stable"
@@ -7,13 +10,8 @@ cache:
 script:
   - npm run build
 deploy:
-  provider: releases
-  api_key:
-    secure: D2aui/vzd3USbwlVLPWoE3vZPj//ruKOgOFz3oEI4OvPORTGzYaXTQBUq05YKtFPDSjUuQHaVuVJ3mhM+hE2i47kNSsQjFWFK9IACN/NTCyTghOWn0XtD3puKlmCoOPqUz42YLdjtIU8KPQ92V6scqW/e41qCnucjxPxdOTxhXYv8lEoZCQOFVncPfJzIC7kHM24ZpEOEZBnTe3FACD5vwQm2xdpLX0JdoMT6iA9pG9QghhbjdEnW9BBLQMCLUEjaYG1M7ssE4cmkOEfLTpGvWVs+c6G7/1KGz/4Krn+4Q/Yc4SVct2w4l4MttrTDuDa/BaJVUQw0fRrEels8OMDcwHswFiHlhJIqx86106h8GDHQ8uvcYZurfIzBB7C4DF55zX+CRx0jlABWR1kfbc1egt95ElP3LmYti+Fdb9RbxKgEOqrrPWLwyllrWjP1iTNdgLGZFFurlPlegP2cnihl7S9+oVoQqpBjOPb7VuwLy5GnhJ0gkwmSYdwkhtRyFmBJQMi/IB8KjihdnT0ExfTNwVr+w8JBKySPQdW4U/YgcJwiy4vP9k6qqkzttGr0JLaUcMH5+XZlmUZMd2R67QaT4VCVRI35DrFCOtZijWPAreSJFlxshXKiJ3MGOrq0GrRU6jzbDnFUaqJ/VdA6CfPizSKQXWIvZE0lxnjjIrWtDQ=
+  provider: pages
   skip_cleanup: true
-  local_dir: public
+  github_token: $GITHUB_TOKEN
   on:
-    repo: AlejandraCP/redBus
-    tags: true 
     branch: master
-
