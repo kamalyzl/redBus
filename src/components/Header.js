@@ -11,7 +11,7 @@ const Header = () => {
           <div className='ed-item s-50 m-50 cross-center'>
             <img
               src='./assets/icons/logoRedBus.png'
-              alt=''
+              alt='Redbus'
               className='logo'
             />
             <img
@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
       <div className='ed-container cross-center pago-efectivo-logo'>
-        <img src='https://user-images.githubusercontent.com/32287306/37760544-01c61d74-2d85-11e8-8e2e-7f5cdea5ee64.png' />
+        <img src='./assets/icons/pagoEfectivo.png' />
       </div>
     </div>
   );

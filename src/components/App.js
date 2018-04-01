@@ -17,10 +17,10 @@ class App extends Component {
         <div >
           <Header />
         </div>
-        <div>
+        <div className = "contenedor">
           <ul className='ed-container select'>
-            <li><NavLink to='/internet' activeClassName='active' className='linkNav'> Banca por internet   </NavLink></li> 
-            <li><NavLink to='/paycash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
+            <li className='ed-item s-50 m-30'><NavLink to='/internet' activeClassName='active' className='linkNav'> Banca por internet </NavLink></li> 
+            <li className='ed-item s-50 m-70'><NavLink to='/paycash' activeClassName='active' className='linkNav'>Pagar en efectivo</NavLink></li>
           </ul>
           <hr className='ed-container'/>
           <Informative/>
